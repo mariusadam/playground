@@ -2,7 +2,7 @@
 
 namespace App\Leetcode;
 
-use App\Leetcode\AddTwoNumbersListNode as ListNode;
+use App\Lib\SinglyLinkedListNode as ListNode;
 
 /**
  * @link https://leetcode.com/problems/add-two-numbers/
