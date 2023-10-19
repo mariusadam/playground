@@ -3,7 +3,7 @@
 namespace App\Tests\Leetcode;
 
 use App\Leetcode\MergeKSortedLists;
-use App\Lib\SinglyLinkedListNode;
+use App\Lib\List\SinglyLinkedListNode;
 use PHPUnit\Framework\TestCase;
 
 class MergeKSortedListsTest extends TestCase

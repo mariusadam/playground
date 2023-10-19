@@ -3,7 +3,7 @@
 namespace App\Tests\Leetcode;
 
 use App\Leetcode\SwapNodesInPairs;
-use App\Lib\SinglyLinkedListNode;
+use App\Lib\List\SinglyLinkedListNode;
 use PHPUnit\Framework\TestCase;
 
 class SwapNodesInPairsTest extends TestCase

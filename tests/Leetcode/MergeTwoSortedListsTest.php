@@ -4,7 +4,7 @@ namespace App\Tests\Leetcode;
 
 use App\Leetcode\MergeTwoSortedLists;
 use PHPUnit\Framework\TestCase;
-use App\Lib\SinglyLinkedListNode;
+use App\Lib\List\SinglyLinkedListNode;
 
 class MergeTwoSortedListsTest extends TestCase
 {

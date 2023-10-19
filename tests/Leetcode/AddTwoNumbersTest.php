@@ -3,7 +3,7 @@
 namespace App\Tests\Leetcode;
 
 use App\Leetcode\AddTwoNumbers;
-use App\Lib\SinglyLinkedListNode as ListNode;
+use App\Lib\List\SinglyLinkedListNode as ListNode;
 use PHPUnit\Framework\TestCase;
 
 class AddTwoNumbersTest extends TestCase

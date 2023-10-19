@@ -3,7 +3,7 @@
 namespace App\Tests\Leetcode;
 
 use App\Leetcode\RemoveNthNodeFromEndOfList;
-use App\Lib\SinglyLinkedListNode;
+use App\Lib\List\SinglyLinkedListNode;
 use PHPUnit\Framework\TestCase;
 
 class RemoveNthNodeFromEndOfListTest extends TestCase

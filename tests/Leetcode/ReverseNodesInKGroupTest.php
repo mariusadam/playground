@@ -2,7 +2,7 @@
 
 namespace App\Tests\Leetcode;
 use App\Leetcode\ReverseNodesInKGroup;
-use App\Lib\SinglyLinkedListNode;
+use App\Lib\List\SinglyLinkedListNode;
 use PHPUnit\Framework\TestCase;
 
 class ReverseNodesInKGroupTest extends TestCase

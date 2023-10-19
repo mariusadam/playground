@@ -2,7 +2,7 @@
 
 namespace App\Leetcode;
 
-use App\Lib\SinglyLinkedListNode as ListNode;
+use App\Lib\List\SinglyLinkedListNode as ListNode;
 
 /**
  * @link https://leetcode.com/problems/merge-two-sorted-lists/
