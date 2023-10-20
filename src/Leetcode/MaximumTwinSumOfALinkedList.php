@@ -35,20 +35,18 @@ class MaximumTwinSumOfALinkedList
     public function pairSumWithReversedList(ListNode $head): int
     {
         $slow = $head;
-        $fast = $head->next;
-        while ($fast !== null && $fast->next !== null) {
+        $fast = $head;
+        while ($fast !== null) {
             $slow = $slow->next;
             $fast = $fast->next->next;
         }
 
         // slow is now pointing to the second half
-        $maxSum = 0;
-        $secondHalf = $slow->next;
-        //reverse the second half
-        $reversedSecondHalf = $this->reverseList($secondHalf);
+        $reversedSecondHalf = $this->reverseList($slow);
 
         $first = $head;
         $second = $reversedSecondHalf;
+        $maxSum = 0;
         while ($second !== null) {
             $maxSum = max($maxSum, $first->val + $second->val);
             $first = $first->next;
