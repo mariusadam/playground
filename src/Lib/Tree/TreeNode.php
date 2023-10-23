@@ -70,4 +70,47 @@ class TreeNode
 
         return $root;
     }
+
+    public function inOrderTraversal(): array
+    {
+        $path = [];
+        $this->buildInOrderTraversal($this, $path);
+
+        return $path;
+    }
+
+    private function buildInOrderTraversal(?TreeNode $current, array &$path): void
+    {
+        if (null === $current) {
+            return;
+        }
+
+        $this->buildInOrderTraversal($current->left, $path);
+        $path[] = $current->val;
+        $this->buildInOrderTraversal($current->right, $path);
+    }
+
+    public function levelOrderTraversal(): array
+    {
+        $levelOrder = [];
+        $queue = new \SplQueue();
+        $queue->enqueue($this);
+        while (!$queue->isEmpty()) {
+            $current = $queue->dequeue();
+            if (null === $current) {
+                $levelOrder[] = null;
+                continue;
+            }
+            $levelOrder[] = $current->val;
+
+
+            if ($current->left !== null || $current->right !== null) {
+                // enqueue both children for non-leaf nodes, even if one of the is null
+                $queue->enqueue($current->left);
+                $queue->enqueue($current->right);
+            }
+        }
+
+        return $levelOrder;
+    }
 }
