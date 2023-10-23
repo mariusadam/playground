@@ -98,6 +98,7 @@ class TreeNode
         while (!$queue->isEmpty()) {
             $current = $queue->dequeue();
             if (null === $current) {
+                // add null to the result in order to be able to represent un-balanced trees
                 $levelOrder[] = null;
                 continue;
             }

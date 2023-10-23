@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Tests\Leetcode;
+
 use App\Leetcode\SearchInABinaryTree;
 use App\Lib\Tree\TreeNode;
 use PHPUnit\Framework\TestCase;
@@ -11,12 +12,12 @@ class SearchInABinaryTreeTest extends TestCase
     {
         return [
             [
-                'tree' => [4,2,7,1,3],
+                'tree' => [4, 2, 7, 1, 3],
                 'val' => 2,
                 'expected' => [2, 1, 3],
             ],
             [
-                'tree' => [4,2,7,1,3],
+                'tree' => [4, 2, 7, 1, 3],
                 'val' => 5,
                 'expected' => [],
             ],

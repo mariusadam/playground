@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Leetcode;
+
 use App\Lib\Tree\TreeNode;
 
 /**
@@ -16,8 +17,8 @@ class SearchInABinaryTree
 
         if ($root->val === $val) {
             return $root;
-        } 
-        
+        }
+
         return $root->val > $val ? $this->searchBST($root->left, $val) : $this->searchBST($root->right, $val);
     }
 }
