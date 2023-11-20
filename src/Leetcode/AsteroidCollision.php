@@ -22,7 +22,7 @@ class AsteroidCollision
                 $previous = array_pop($asteroidsStack);
                 $willCollide = $previous > 0 && $incomingSize < 0;
 
-                if (!$willCollide) {
+                if ($willCollide) {
                     // no collision possible, none explodes
                     $asteroidsStack[] = $previous;
                     $asteroidsStack[] = $incomingSize;
